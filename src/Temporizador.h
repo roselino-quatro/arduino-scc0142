@@ -28,7 +28,7 @@ void iniciaTemporizador(){
 
 void paraTemporizador(){
   Serial.println("T1 parado");
-    // Turn T1 off
+  // Turn T1 off
   TCCR1B &= 0xF8;
   TIMSK1 = 0;
 }
